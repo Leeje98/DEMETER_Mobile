@@ -1,0 +1,506 @@
+
+
+
+
+
+/* ----------------choice------------------ */
+
+/* .cheice_box {
+    margin-top: 47px;
+}
+
+
+#category {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #333;
+    background: url(../img/baseline_expand_more_black_24dp.png) no-repeat right 50%; 
+    화살표 위치
+    background-size: 30px; 
+    화살표 크기
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+} */
+
+
+
+/* ----------------choice------------------ */
+
+#top {
+    height: 57px;
+}
+
+
+
+/* ----------------detail_main_title------------------ */
+
+.detail_main_title {}
+
+.inner_title_box {
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+.inner_title_box a{
+    position: absolute;
+    top: 5;
+    left: 10px;
+    font-size: 25px;
+    line-height: 35px;
+    /* border: 1px solid #333; */
+}
+
+.inner_title_box .title {
+    text-align: center;
+    font-size: 15px;
+    line-height: 35px;
+}
+
+
+/* ----------------detail_main_title------------------ */
+/* ----------------detail_main------------------ */
+
+.detail_main {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.product_img {
+    width: 100%;
+}
+
+.product_img img {
+    width: 100%;
+}
+
+.product_title {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.product_information {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+}
+
+.product_information .information {
+    display: flex;
+}
+
+.product_information .information div:nth-child(1) {
+    flex: 2;
+    line-height: 25px;
+}
+
+.product_information .information div:nth-child(2) {
+    flex: 4;
+}
+
+.product_information .price {
+    font-weight: bold;
+}
+
+
+
+.cheice_box .cheice_box_inner {
+    margin: 15px 0;
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #333;
+}
+
+.cheice_box .title {
+    flex: 1;
+    /* width: 50px; */
+    /* float: left; */
+    /* padding-right: 20px; */
+    line-height: 30px;
+}
+
+
+#form {display: none;}
+
+.cheice_box .cheice_box_inner .form_box {
+    flex: 4;
+}
+
+.cheice_box .cheice_box_inner .form_box label {
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    line-height: 30px;
+    /* width: 100%; */
+}
+
+.cheice_box .cheice_box_inner .choice_sheet {
+    border: 1px solid #333;
+    border-top: none;
+    padding: 5px 10px;
+    display: none;
+}
+
+#form:checked ~ .choice_sheet {display: block;}
+
+/* #product_choice {
+    width: 100%;
+    border: 1px solid #333;
+    height: 30px;
+}  ------------폼박스 */
+
+/* --------------------------------------- */
+
+
+.option_choice_list .product_choice_box_outer {
+    max-height: 220px;
+    overflow-y: scroll;
+    border-top: 1px solid #333;
+
+    border-bottom: 1px solid #333;
+}
+
+.option_choice_list .product_choice_box {
+    border: 1px solid #333;
+    margin: 15px auto;
+    display: flex;
+    padding: 10px;
+}
+
+.option_choice_list .product_choice_box .img_box {
+    flex: 2;
+    margin: auto 10px auto 0;
+}
+
+.option_choice_list .product_choice_box .img_box img {
+    width: 100%;
+    border: 1px solid #333;
+}
+
+.option_choice_list .product_choice_box .text {
+    flex: 5;
+}
+
+.product_choice_box .text .text_inner {
+    display: flex;
+}
+
+.option_choice_list .product_choice_box .text .text_inner a {
+    font-size: 20px;
+}
+
+.option_choice_list .product_choice_box .text .product_name {
+    /* font-size: 17px; */
+    margin-bottom: 5px;
+}
+
+.option_choice_list .product_choice_box .text .button_box {
+    display: flex;
+    float: right;
+}
+
+.option_choice_list .product_choice_box .text .button_box button {
+    width: 30px;
+    height: 30px;
+}
+
+.option_choice_list .product_choice_box .text .button_box>div {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+}
+
+.option_choice_list .product_choice_state {
+    margin: 10px 0;
+}
+
+/* .product_choice_state .state_price {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 18px;
+} */
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+.main_bttn {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.basic_var_heart_ladel {
+    position: fixed;
+    bottom: 9px;
+    left: 60px;
+    color: white;
+    z-index: 3;
+    font-size: 30px;
+}
+
+.sharing_btn {
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    z-index: 3;
+    font-size: 28px;
+}
+
+
+#sharing {display: none;}
+
+.sharing_filter_btn {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 109;
+    background-color: #333333a1;
+    display: none;
+}
+
+#order, #cart, #heart {display: none;}
+
+/* .pop----------------------------------------- */
+
+
+/* ----------------detail_main------------------ */
+
+
+/* ----------------detail_sub------------------ */
+
+
+
+#utilization,
+#detailed,
+#review,
+#inquiry {
+    display: none;
+}
+
+
+.label_box {
+    display: flex;
+    position: sticky;
+    top: 55px;
+}
+
+.label_box label {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    box-sizing: border-box;
+    padding: 5px 0 5px;
+    background-color: white;
+}
+
+.label_box .tab_01 {
+    border-left: 1px solid #333;
+}
+
+#utilization:checked ~ .label_box .tab_01 {
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+}
+#detailed:checked ~ .label_box .tab_02 {
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+}
+#review:checked ~ .label_box .tab_03 {
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+}
+#inquiry:checked ~ .label_box .tab_04 {
+    background-color: #333;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+.sheet>div {
+    display: none;
+    /* margin-bottom: 50px; */
+}
+
+.sheet .detailed_page .img_box img {
+    width: 100%;
+}
+
+
+#utilization:checked ~ .sheet .utilization_page {
+    display: block;
+}
+
+#detailed:checked ~ .sheet .detailed_page {
+    display: block;
+}
+
+#review:checked ~ .sheet .review_page {
+    display: block;
+}
+
+#inquiry:checked ~ .sheet .inquiry_page {
+    display: block;
+}
+
+.sheet .utilization_page {
+    padding: 20px;
+    background-color: #e2e2e2;
+    font-size: 0.9rem;
+}
+
+.sheet .utilization_page h4 {
+    line-height: 40px;
+}
+
+.sheet button {
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border: 1px solid #333;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.sheet>div .text_box {
+    text-align: center;
+    line-height: 200px;
+}
+
+
+
+/* ----------------detail_sub------------------ */
+
+
+
+
+/* ----------------nav------------------ */
+/* ----------------basic_var------------------ */
+
+.basic_var {
+    width: calc(100% - 40px);
+    height: 55px;
+    background-color: #333;
+    padding: 0 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.basic_var .inner_var .icon {
+    float: left;
+    color: white;
+    font-size: 25px;
+    line-height: 55px;
+}
+
+
+
+
+
+
+
+/* .basic_var .inner_var .icon a {
+    color: white;
+    margin-right: 10px;
+} */
+
+
+
+
+
+.basic_var .inner_var .button {
+    float: right;
+    background-color: white;
+}
+
+.basic_var .button {
+    width: 170px;
+    height: 35px;
+    margin: 10px 0;
+    text-align: center;
+    line-height: 35px;
+}
+
+
+/* ----------------basic_var------------------ */
+/* ----------------choice_bar------------------ */
+
+.nav .choice_bar {
+    display: none;
+}
+
+.nav .choice_bar label {
+    flex: 1;
+    width: 50%;
+    text-align: center;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color: white;
+    line-height: 55px;
+    font-size: 18px;
+}
+
+/* ----------------choice_bar------------------ */
+
+
+
+
+/* ----------------option_choice_window------------------ */
+/* ----------------option_choice_window------------------ */
+
+
+
+
+
+
+/* ----------------nav------------------ */
+
+
+
+
+/* ----------------top_button------------------ */
+
+.top_button {
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+}
+
+.top_button a {}
+
+.top_button a i {
+    font-size: 30px;
+    font-weight: lighter;
+    border: 1px solid #333;
+    background-color: #ffffff81;
+}
+
+/* ----------------top_button------------------ */

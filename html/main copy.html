@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMETER_Mobile_main</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="inner_header">
+            <section class="header_bar">
+                <div class="logo_img"><a href="main.html"><img src="../img/DEMETER_logo.jpg" alt=""></a></div>
+    
+                <input type="checkbox" id="ham_btn">
+                <label for="ham_btn" class="lnb_btn"><i class="xi-bars"></i></label>
+    
+    
+                <div class="back_display"></div>
+
+            
+                <section class="menu_page">
+                    <div class="inner_menu_page">
+
+                           
+                        <label for="ham_btn" class="lnb_close_btn"><i class="xi-hamburger-back xi-rotate-180"></i></label>
+
+                        <div class="Profile">
+                            <div class="profile_img">
+                                <a href="./my_page.html"><img src="../img/Profile.png" alt=""></a>
+                            </div>
+                            <div class="profile_text">
+                                <div class="name"><strong>홍길동</strong>님</div>
+                                <div class="hello">오늘도 즐거운 쇼핑 되세요:)</div>
+                            </div>
+                        </div>
+                        <div class="search">
+                            <div class="search_page">
+                                <input type="search" id="search" class="search_box">
+                                <a href="#!"><i class="xi-search"></i></a>
+                            </div>
+                        </div>
+                        <div class="categories_box">
+                            <div class="categories">
+                                <div class="categories_name ABOUT">   
+                                    <input type="checkbox" id="ABOUT_check" class="ABOUT_btn">
+                                    <label for="ABOUT_check"><div class="dox"></div>ABOUT</label>
+        
+                                    <ul class="ABOUT_list">
+                                        <li><a href="#!">ABOUT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name EDITION">   
+                                    <input type="checkbox" id="EDITION_check" class="EDITION_btn">
+                                    <label for="EDITION_check"><div class="dox"></div>EDITION</label>
+        
+                                    <ul class="EDITION_list">
+                                        <li><a href="./sub-EDITION.html">ALL</a></li>
+                                        <li><a href="./sub-EDITION_Signature.html">시그니처 에디션 라인</a></li>
+                                        <li><a href="./sub-EDITION_flower.html">탄생화 선물 에디션</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name PERFUME">
+                                    <input type="checkbox" id="PERFUME_check" class="PERFUME_btn">
+                                    <label for="PERFUME_check"><div class="dox"></div>PERFUME</label>
+        
+                                    <ul class="PERFUME_list">
+                                        <li><a href="#!">ALL</a></li>
+                                        <li><a href="#!">드레스퍼퓸</a></li>
+                                        <li><a href="#!">코튼퍼퓸</a></li>
+                                        <li><a href="#!">디퓨져</a></li>
+                                        <li><a href="#!">그 외</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name BATH&BODY">
+                                    <input type="checkbox" id="BATHBODY_check" class="BATH_BODY_btn">
+                                    <label for="BATHBODY_check"><div class="dox"></div>BATH & BODY</label>
+        
+                                    <ul class="BATH&BODY_list">
+                                        <li><a href="#!">ALL</a></li>
+                                        <li><a href="#!">바디로션</a></li>
+                                        <li><a href="#!">바디클렌저</a></li>
+                                        <li><a href="#!">바디퍼퓸</a></li>
+                                        <li><a href="#!">핸드</a></li>
+                                        <li><a href="#!">립</a></li>
+                                        <li><a href="#!">바디세트</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name SET&GIFT">
+                                    <input type="checkbox" id="SETGIFT_check" class="BATH_BODY_btn">
+                                    <label for="SETGIFT_check"><div class="dox"></div>SET&GIFT</label>
+        
+                                    <ul class="SET&GIFT_list">
+                                        <li><a href="#!">ALL</a></li>
+                                        <li><a href="#!">SET</a></li>
+                                        <li><a href="#!">GIFT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name EVENT">   
+                                    <input type="checkbox" id="EVENT_check" class="EVENT_btn">
+                                    <label for="EVENT_check"><div class="dox"></div>EVENT</label>
+        
+                                    <ul class="EVENT_list">
+                                        <li><a href="#!">EVENT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="categories_name Community">
+                                    <input type="checkbox" id="community_check" class="community_btn">
+                                    <label for="community_check"><div class="dox"></div>커뮤니티</label>
+        
+                                    <ul class="community_list">
+                                        <li><a href="#!">게시판</a></li>
+                                        <li><a href="#!">이용안내</a></li>
+                                        <li><a href="#!">상품Q&A</a></li>
+                                        <li><a href="#!">리뷰</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="btn">
+                            <div class="box01"><a href="#!">
+                                <div class="icon"><i class="xi-call"></i>고객센터</div>
+                                <p>02-323-0356</p>
+                            </a></div>
+                            <div class="box02"><a href="#!">
+                                <div class="icon"><i class="xi-forum"></i>1:1문의하기</div>
+                                <p>Q&A</p>
+                            </a></div>
+                        </div>
+
+
+                    </div>
+                </section>
+            
+    
+            </section>
+        </div>
+        
+    </header>
+
+
+    <section class="nav_bar">
+        <ul class="nav">
+            <li><a href="./my_page.html"><i class="xi-user"></i>마이페이지</a></li>
+            <li><a href="#!"><i class="xi-truck xi-flip-horizontal"><br></i>주문/배송</a></li>
+            <li><a href="./main.html"><i class="xi-home"></i>홈</a></li>
+            <li><a href="#!"><i class="xi-heart"></i>관심상품</a></li>
+            <li><a href="#!"><i class="xi-basket"></i>장바구니</a></li>
+        </ul>
+    </section>
+
+    <section class="mainVisual">
+        <div class="visual_main_box">
+
+            <input type="radio" id="main_visual_01" name="mainVisual" checked>
+            <input type="radio" id="main_visual_02" name="mainVisual" >
+            <input type="radio" id="main_visual_03" name="mainVisual" >
+            <input type="radio" id="main_visual_04" name="mainVisual" >
+            <input type="radio" id="main_visual_05" name="mainVisual" >
+
+            <label for="main_visual_01" class="left left_01"><i class="xi-angle-left"></i></label>
+            <label for="main_visual_01" class="right right_01"><i class="xi-angle-right"></i></label>
+
+            <label for="main_visual_02" class="left left_02"><i class="xi-angle-left"></i></label>
+            <label for="main_visual_02" class="right right_02"><i class="xi-angle-right"></i></label>
+
+            <label for="main_visual_03" class="left left_03"><i class="xi-angle-left"></i></label>
+            <label for="main_visual_03" class="right right_03"><i class="xi-angle-right"></i></label>
+
+            <label for="main_visual_04" class="left left_04"><i class="xi-angle-left"></i></label>
+            <label for="main_visual_04" class="right right_04"><i class="xi-angle-right"></i></label>
+
+            <label for="main_visual_05" class="left left_05"><i class="xi-angle-left"></i></label>
+            <label for="main_visual_05" class="right right_05"><i class="xi-angle-right"></i></label>
+
+            <div class="visual_main visual_main_01">
+                <img src="../img/main_visual/main_visual_01.jpg" alt="">
+            </div>
+            <div class="visual_main visual_main_02">
+                <img src="../img/main_visual/main_visual_02.jpg" alt="">
+            </div>
+            <div class="visual_main visual_main_03">
+                <img src="../img/main_visual/main_visual_03.png" alt="">
+            </div>
+            <div class="visual_main visual_main_04">
+                <img src="../img/main_visual/main_visual_04.jpg" alt="">
+            </div>
+            <div class="visual_main visual_main_05">
+                <img src="../img/main_visual/main_visual_05.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="visual_categories">
+        <h4>어떤 제품을 찾으시나요?</h4>
+        <ul class="categories">
+            <li><a href="./sub-EDITION.html"><div class="categories_img"><img src="../img/EDITION/flower_04_Sweet pee_30ml_set.jpg" alt=""></div>EDITION</a></li>
+            <li><a href="#!"><div class="categories_img"><img src="../img/PERFUME/ARTISAN AROMA_16ml.jpg" alt=""></div>PERFUME</a></li>
+            <li><a href="#!"><div class="categories_img"><img src="../img/BATH & BODY/Bath&Body_02.jpg" alt=""></div>BATH&BODY</a></li>
+            <li><a href="#!"><div class="categories_img"><img src="../img/GIFT/gift_08.gif" alt=""></div>SET&GIFT</a></li>
+            <li><a href="#!"><div class="categories_img"><img src="../img/EVENT/event_03.jpg" alt=""></div>EVENT</a></li>
+        </ul>
+
+    </section>
+
+    <section class="new_item item_list">
+        <h4>NEW ITEM</h4>
+        <input type="radio" id="new_item_list_01" name="item_01" checked>
+        <input type="radio" id="new_item_list_02" name="item_01">
+
+        <div class="inner_item_list">
+            <ul class="new_item_list product_list_01">
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">61,000원</div>
+                            <div class="price">26,900원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="new_item_heart_01" class="heart_btn">
+    
+                            <label for="new_item_heart_01"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_01"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/perfume_16ml 15_choice_1.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">오드퍼퓸 16ml 15종 택2</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">38,000원</div>
+                            <div class="price">26,600원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>1,330P</div>
+    
+                            <input type="checkbox" id="new_item_heart_02" class="heart_btn">
+    
+                            <label for="new_item_heart_02"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_02"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/Wet Garden_30ml.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">[데메테르] Wet Garden(웻가든) 30ml</div>
+                            <div class="badge">BEST</div>
+                            <div class="badge">NEW</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">19,800원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="new_item_heart_03" class="heart_btn">
+    
+                            <label for="new_item_heart_03"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_03"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+            </ul>
+            <ul class="new_item_list product_list_02">
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/limited edition_30_30ml_perfume.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">[데메테르] 30개 한정 30ml 향수 19종</div>
+                            <div class="badge">BEST</div>
+                            <div class="badge">한정품</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">19,800원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="new_item_heart_04" class="heart_btn">
+    
+                            <label for="new_item_heart_04"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_04"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/Cherry blossom+Peach_2set.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 벚꽃&달달 피치 세트</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">41,000원</div>
+                            <div class="price">19,000원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>950P</div>
+    
+                            <input type="checkbox" id="new_item_heart_05" class="heart_btn">
+    
+                            <label for="new_item_heart_05"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_05"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/10ml X 3set.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 재미있는 향기 향수10ml X 3종 세트 자바칩프라페_웻가든_데이지</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">14,500원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="new_item_heart_06" class="heart_btn">
+    
+                            <label for="new_item_heart_06"><i class="xi-heart-o"></i></label>
+                            <label for="new_item_heart_06"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="ladel_box">
+            <!-- <label for="new_item_list_01" class="item_01_01"><i class="xi-layout-full"></i></label>
+            <label for="new_item_list_02" class="item_01_02"><i class="xi-layout-full"></i></label> -->
+            <label for="new_item_list_01" class="item_01_01"><div></div></label>
+            <label for="new_item_list_02" class="item_01_02"><div></div></label>
+        </div>
+        
+    </section>
+
+    <section class="best_item item_list">
+        <h4>BEST ITEM</h4>
+        <input type="radio" id="best_item_list_01" name="item_02" checked>
+        <input type="radio" id="best_item_list_02" name="item_02">
+
+        <div class="inner_item_list">
+            <ul class="best_item_list product_list_01">
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">61,000원</div>
+                            <div class="price">26,900원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="best_item_heart_01" class="heart_btn">
+    
+                            <label for="best_item_heart_01"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_01"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/perfume_16ml 15_choice_1.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">오드퍼퓸 16ml 15종 택2</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">38,000원</div>
+                            <div class="price">26,600원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>1,330P</div>
+    
+                            <input type="checkbox" id="best_item_heart_02" class="heart_btn">
+    
+                            <label for="best_item_heart_02"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_02"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/Wet Garden_30ml.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">[데메테르]Wet Garden(웻가든) 30ml</div>
+                            <div class="badge">BEST</div>
+                            <div class="badge">NEW</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">19,800원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="best_item_heart_03" class="heart_btn">
+    
+                            <label for="best_item_heart_03"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_03"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+            </ul>
+            <ul class="new_item_list product_list_02">
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/limited edition_30_30ml_perfume.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">[데메테르] 30개 한정 30ml 향수 19종</div>
+                            <div class="badge">BEST</div>
+                            <div class="badge">한정품</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">19,800원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="best_item_heart_04" class="heart_btn">
+    
+                            <label for="best_item_heart_04"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_04"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/Cherry blossom+Peach_2set.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 벚꽃&달달 피치 세트</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">41,000원</div>
+                            <div class="price">19,000원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>950P</div>
+    
+                            <input type="checkbox" id="best_item_heart_05" class="heart_btn">
+    
+                            <label for="best_item_heart_05"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_05"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+                <li>
+                    <div><a href="#!">
+                        <div class="best_img product_img"><img src="../img/PERFUME/10ml X 3set.jpg" alt=""></div>
+                        <div class="text">
+                            <div class="title">데메테르 재미있는 향기 향수10ml X 3종 세트 자바칩프라페_웻가든_데이지</div>
+                            <div class="badge">BEST</div>
+                            <div class="cost">29,000원</div>
+                            <div class="price">14,500원</div>
+                            <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+    
+                            <input type="checkbox" id="best_item_heart_06" class="heart_btn">
+    
+                            <label for="best_item_heart_06"><i class="xi-heart-o"></i></label>
+                            <label for="best_item_heart_06"><i class="xi-heart"></i></label>
+    
+                        </div>
+                    </a></div>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="ladel_box">
+            <!-- <label for="new_item_list_01" class="item_01_01"><i class="xi-layout-full"></i></label>
+            <label for="new_item_list_02" class="item_01_02"><i class="xi-layout-full"></i></label> -->
+            <label for="best_item_list_01" class="item_02_01"><div></div></label>
+            <label for="best_item_list_02" class="item_02_02"><div></div></label>
+        </div>
+        
+    </section>
+
+
+    <section class="aroma">
+        <h4>향기별로 골라보기</h4>
+
+        <div class="aroma_inner_box">
+
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_01.jpg" alt="">
+                </div>
+                <div class="name">로즈머스크 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_02.jpg" alt="">
+                </div>
+                <div class="name">스윗베이비 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_03.jpg" alt="">
+                </div>
+                <div class="name">아이슬란딕오로라 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_04.jpg" alt="">
+                </div>
+                <div class="name">코튼블루 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_05.jpg" alt="">
+                </div>
+                <div class="name">클린솝 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_06.jpg" alt="">
+                </div>
+                <div class="name">파우더리머스크 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_07.jpg" alt="">
+                </div>
+                <div class="name">퍼지네이블 향기모음</div>
+            </a></div>
+            <div class="product_box"><a href="#!">
+                <div class="img_box">
+                    <img src="../img/compilation/aroma_08.jpg" alt="">
+                </div>
+                <div class="name">화이트머스크 향기모음</div>
+            </a></div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+    <!-- <section class="best_item item_list">
+        <h4>BEST ITEM</h4>
+        <ul class="new_item_list product_list_01">
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[카카오x톡별기획]데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                        <div class="badge">BEST</div>
+                        <div class="cost">61,000원</div>
+                        <div class="price">26,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="new_item_heart_01" class="heart_btn">
+
+                        <label for="new_item_heart_01"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_01"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/PERFUME/perfume_16ml 15_choice_1.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">오드퍼퓸 16ml 15종 택2</div>
+                        <div class="badge">BEST</div>
+                        <div class="cost">38,000원</div>
+                        <div class="price">26,600원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>1,330P</div>
+
+                        <input type="checkbox" id="new_item_heart_02" class="heart_btn">
+
+                        <label for="new_item_heart_02"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_02"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/PERFUME/Wet Garden_30ml.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]Wet Garden(웻가든) 30ml</div>
+                        <div class="badge">BEST</div>
+                        <div class="badge">NEW</div>
+                        <div class="cost">29,000원</div>
+                        <div class="price">19,800원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="new_item_heart_03" class="heart_btn">
+
+                        <label for="new_item_heart_03"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_03"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+        </ul>
+        <ul class="new_item_list product_list_02">
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/PERFUME/limited edition_30_30ml_perfume.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르] 30개 한정 30ml 향수 19종</div>
+                        <div class="badge">BEST</div>
+                        <div class="badge">한정품</div>
+                        <div class="cost">29,000원</div>
+                        <div class="price">19,800원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="new_item_heart_04" class="heart_btn">
+
+                        <label for="new_item_heart_04"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_04"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/PERFUME/Cherry blossom+Peach_2set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">데메테르 벚꽃&달달 피치 세트</div>
+                        <div class="badge">BEST</div>
+                        <div class="cost">41,000원</div>
+                        <div class="price">19,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>950P</div>
+
+                        <input type="checkbox" id="new_item_heart_05" class="heart_btn">
+
+                        <label for="new_item_heart_05"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_05"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="best_img product_img"><img src="../img/PERFUME/10ml X 3set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">데메테르 재미있는 향기 향수10ml X 3종 세트 자바칩프라페_웻가든_데이지</div>
+                        <div class="badge">BEST</div>
+                        <div class="cost">29,000원</div>
+                        <div class="price">14,500원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="new_item_heart_06" class="heart_btn">
+
+                        <label for="new_item_heart_06"><i class="xi-heart-o"></i></label>
+                        <label for="new_item_heart_06"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+        </ul>
+    </section> -->
+
+    <section class="edition edition_01 item_list">
+        <div class="edition_benner edition_benner_01">
+            <div><a href="./sub-EDITION_flower.html"><img src="../img/EDITION_benner/banner_01_--m.jpg" alt=""></div>
+            </a></div>
+        <ul class="edition_01_list product_list">
+            <li>
+                <div><a href="./detail_EDITION_flower_03.html">
+                    <div class="edition_01_img product_img"><img src="../img/EDITION/flower_03_daffodil_30ml_set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[탄생화선물]3월 수선화(daffodil) 플라워 30ml 향수 + 키링 세트 </div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">29,000원</div>
+                        <div class="price">20,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_01_item_heart_01" class="heart_btn">
+
+                        <label for="edition_01_item_heart_01"><i class="xi-heart-o"></i></label>
+                        <label for="edition_01_item_heart_01"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_01_img product_img"><img src="../img/EDITION/flower_04_Sweet pee_30ml_set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[탄생화선물]4월 스위트피 (Sweet pee) 플라워 30ml 향수 + 키링 세트 </div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">29,000원</div>
+                        <div class="price">20,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_01_item_heart_02" class="heart_btn">
+
+                        <label for="edition_01_item_heart_02"><i class="xi-heart-o"></i></label>
+                        <label for="edition_01_item_heart_02"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_01_img product_img"><img src="../img/EDITION/flower_05_Lily of the valley_30ml_set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[탄생화선물]5월 은방울꽃(Lily of the valley) 플라워 30ml 향수 + 키링 세트 </div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">29,000원</div>
+                        <div class="price">20,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_01_item_heart_03" class="heart_btn">
+
+                        <label for="edition_01_item_heart_03"><i class="xi-heart-o"></i></label>
+                        <label for="edition_01_item_heart_03"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_01_img product_img"><img src="../img/EDITION/flower_07_Rose Flower_30ml_set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[탄생화선물]7월 워터릴리(water lily)플라워 30ml 향수 + 키링 세트 </div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">29,000원</div>
+                        <div class="price">20,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_01_item_heart_04" class="heart_btn">
+
+                        <label for="edition_01_item_heart_04"><i class="xi-heart-o"></i></label>
+                        <label for="edition_01_item_heart_04"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_01_img product_img"><img src="../img/EDITION/flower_09_Forget Me-Not_30ml_set.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[탄생화선물]9월 물망초(Forget Me-Not) 플라워 30ml 향수 + 키링 세트 </div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">29,000원</div>
+                        <div class="price">20,000원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_01_item_heart_05" class="heart_btn">
+
+                        <label for="edition_01_item_heart_05"><i class="xi-heart-o"></i></label>
+                        <label for="edition_01_item_heart_05"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="./sub-EDITION_flower.html">
+                    <i class="xi-ellipsis-h"></i>더보기
+                </a></div>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="edition edition_02 item_list">
+        <div class="edition_benner edition_benner_02">
+            <div><a href="./sub-EDITION_Signature.html"><img src="../img/EDITION_benner/banner_02-1.jpg" alt=""></a></div>
+        </div>
+        <ul class="edition_02_list product_list">
+            <li>
+                <div><a href="#!">
+                    <div class="edition_02_img product_img"><img src="../img/EDITION/signature_perfume_50ml_Oddouwallet_Baby Powder.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]베이비파우더(Baby Powder) 오드뚜왈렛 향수 50ml</div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">35,000원</div>
+                        <div class="price">28,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_02_item_heart_01" class="heart_btn">
+
+                        <label for="edition_02_item_heart_01"><i class="xi-heart-o"></i></label>
+                        <label for="edition_02_item_heart_01"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_02_img product_img"><img src="../img/EDITION/signature_perfume_50ml_Oddouwallet_Laundromat.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]세탁건조(Laundromat) 오드뚜왈렛 향수 50ml</div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">35,000원</div>
+                        <div class="price">28,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_02_item_heart_02" class="heart_btn">
+
+                        <label for="edition_02_item_heart_02"><i class="xi-heart-o"></i></label>
+                        <label for="edition_02_item_heart_02"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_02_img product_img"><img src="../img/EDITION/signature_perfume_50ml_Oddouwallet_Something.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]썸띵(Something) 오드뚜왈렛 향수 50ml</div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">35,000원</div>
+                        <div class="price">28,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_02_item_heart_03" class="heart_btn">
+
+                        <label for="edition_02_item_heart_03"><i class="xi-heart-o"></i></label>
+                        <label for="edition_02_item_heart_03"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_02_img product_img"><img src="../img/EDITION/signature_perfume_50ml_Oddouwallet_White Musk.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]화이트머스크(White Musk) 오드뚜왈렛 향수 50ml</div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">35,000원</div>
+                        <div class="price">28,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_02_item_heart_04" class="heart_btn">
+
+                        <label for="edition_02_item_heart_04"><i class="xi-heart-o"></i></label>
+                        <label for="edition_02_item_heart_04"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            <li>
+                <div><a href="#!">
+                    <div class="edition_02_img product_img"><img src="../img/EDITION/signature_perfume_50ml_Oddouwallet_Cotton Blue.jpg" alt=""></div>
+                    <div class="text">
+                        <div class="title">[데메테르]코튼블루(Cotton Blue) 오드뚜왈렛 향수 50ml</div>
+                        <!-- <div class="badge">BEST</div> -->
+                        <div class="cost">35,000원</div>
+                        <div class="price">28,900원</div>
+                        <div class="saved_money"><div class="saved_badge">적</div>3%</div>
+
+                        <input type="checkbox" id="edition_02_item_heart_05" class="heart_btn">
+
+                        <label for="edition_02_item_heart_05"><i class="xi-heart-o"></i></label>
+                        <label for="edition_02_item_heart_05"><i class="xi-heart"></i></label>
+
+                    </div>
+                </a></div>
+            </li>
+            
+            <li>
+                <div><a href="./sub-EDITION_Signature.html">
+                    <i class="xi-ellipsis-h"></i>더보기
+                </a></div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="video">
+        <div class="video_container">
+            <iframe width="898" height="506" src="https://www.youtube.com/embed/4rDtbO0zwAk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="btn">
+        <div class="box01"><a href="#!">
+            <div class="icon"><i class="xi-call"></i>고객센터</div>
+            <p>02-323-0356</p>
+        </a></div>
+        <div class="box02"><a href="#!">
+            <div class="icon"><i class="xi-forum"></i>1:1문의하기</div>
+            <p>Q&A</p>
+        </a></div>
+    </div>
+
+    <footer class="footer">
+        
+        <div class="sns">
+            <div><a href="https://www.youtube.com/channel/UC68OK1FqRX-DlSFHswCqmcg"><i class="xi-youtube"></i></a></div>
+            <div><a href="https://www.instagram.com/demeter_kr/"><i class="xi-instagram"></i></a></div>
+            <div><a href="https://www.facebook.com/Dazzling.M.21/"><i class="xi-facebook"></i></a></div>
+        </div>
+
+
+        <ul>
+            <li><a href="#!">이용안내</a></li>
+            <li><a href="#!">회사소개</a></li>
+            <li><a href="#!"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="#!">이용약관</a></li>
+        </ul>
+
+        <div class="footer_text">
+            주식회사포시즌라보라토리<br>
+            서울특별시 종로구 팔판길 38 (팔판동) 2층<br>
+            대표이사: 김태희 사업자등록번호: 137-86-46113<br>
+            통신판매업신고: 제2020-서울종로-0232호 [사업자정보확인]<br>
+            개인정보관리책임: 김태희(joan_kim@prestizine.com)<br>
+            호스팅제공: 카페24(주)<br>
+            E-mail: parfums1997@gmail.com<br><br>
+            Copyright© 데메테르. All Rights Reserved.
+        </div>
+
+
+
+    </footer>
+
+    
+    
+</body>
+</html>

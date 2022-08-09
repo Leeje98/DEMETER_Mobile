@@ -1,0 +1,392 @@
+
+
+
+
+
+/* ----------------choice------------------ */
+
+.cheice_box {
+    margin-top: 56px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
+
+/*
+#category {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #333;
+    background: url(../img/baseline_expand_more_black_24dp.png) no-repeat right 50%; /* 화살표 위치 
+    background-size: 25px; /* 화살표 크기 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+}
+
+form {
+    background-color: white;
+}
+*/
+
+
+
+
+/* ----------------choice02------------------ */
+
+
+#detail_category {display: none;}
+#category {display: none;}
+
+#detail_category:checked ~ .sheet {display: inline-block;}
+#category:checked ~ .sheet {display: inline-block;}
+
+
+/* #All_btn, #Signature_btn, #Flower_btn {display: none;} */
+
+/* #All_btn:checked ~ .detail_category_btn_all {z-index: 10;}
+#Signature_btn:checked ~ .detail_category_btn_01 {z-index: 10;}
+#Flower_btn:checked ~ .detail_category_btn_02 {z-index: 10;} */
+
+/* #Signature_btn:checked ~ .flower {display: none;} */
+
+.cheice_box {
+    display: flex;
+}
+
+.choice_00 {
+    /* position: relative; */
+    flex: 1;
+}
+
+.choice_01 {position: relative;}
+.choice_02 {position: relative;}
+
+.choice_00 .sheet {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border: 1px solid #333;
+    border-top: none;
+    box-sizing: content-box;
+    width: 80%;
+    /* width: inherit; */
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 13px;
+    background-color: white;
+
+    display: none;
+}
+
+
+/* .choice_02 .ladel_box {
+    position: relative;
+} */
+
+.choice_00 .ladel_box label{
+    /* position: absolute; */
+    border: 1px solid #333;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    overflow: hidden;
+
+    /* display: none; */
+}
+
+.choice_02 .ladel_box label {
+    border-left: none;
+}
+
+.choice_00 .ladel_box label div {
+    line-height: 47px;
+    padding: 0 15px;
+    /* font-size: 13px; */
+    background-color: white;
+}
+
+.choice_00 .ladel_box label .icon {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------choice------------------ */
+
+
+
+/* ----------------best_item------------------ */
+
+.item_list {
+    margin-top: 100px;
+    padding: 10PX;
+}
+
+.item_list h4 {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.item_list ul {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 70px;
+}
+
+
+#display_02_btn, #display_03_btn {display: none;}
+
+#display_02_btn:checked ~ .product_list li {width: calc(50% - 10px);}
+#display_02_btn:checked ~ .product_list li .product_img {height: 140px;}
+#display_02_btn:checked ~ .label_box .display_02-1 {display: none;}
+#display_02_btn:checked ~ .label_box .display_02-2 
+{display: block; border: 1px solid #c0c0c0; opacity: 0.8;}
+#display_02_btn:checked ~ .product_list .text label {font-size: 35px;}
+
+
+#display_03_btn:checked ~ .product_list li {width: calc(33.333333% - 10px);}
+#display_03_btn:checked ~ .product_list .product_img {height: 90px;}
+#display_03_btn:checked ~ .label_box .display_03-1 {display: none;}
+#display_03_btn:checked ~ .label_box .display_03-2 
+{display: block; border: 1px solid #c0c0c0; opacity: 0.8;}
+
+
+.label_box {
+    color: #c0c0c0;
+    font-size: 10px;
+    margin: 10px 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.label_box>label {
+    padding: 5px;
+}
+.label_box>label img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+}
+
+.display_02-2, .display_03-2 {display: none;}
+
+.item_list ul li {
+    
+    /* height: 260px; */
+    overflow: hidden;
+    margin: 5px 5px 15px 5px;
+    /* border: 1px solid #333; */
+}
+
+.item_list ul li .product_img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.item_list ul li .product_img img {
+    width: 100%;
+}
+
+.item_list ul li .text {
+    position: relative;
+}
+
+.item_list ul li .text .title {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    
+    font-size: 17px;
+}
+
+.item_list ul li .text .badge {
+    color: purple;
+    border: 1px solid purple;
+    display: inline-block;
+    padding: 0 2px;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.item_list ul li .text .cost {
+    text-decoration: line-through;
+}
+
+.item_list ul li .text .price {
+    font-weight: bold;
+    /* display: inline-block; */
+    margin-right: 5px;
+}
+
+.item_list ul li .text .saved_money {
+    display: inline-block;
+    color: #333;
+}
+
+.item_list ul li .text .saved_money .saved_badge {
+    font-size: 11px;
+    background-color: #cf82df; 
+    padding: 1px 4px; 
+    border-radius: 5px; color: #fff;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+#best_item_heart_01,
+#best_item_heart_02,
+#best_item_heart_03,
+#best_item_heart_04,
+#best_item_heart_05,
+#best_item_heart_06,
+#best_item_heart_07,
+#best_item_heart_08,
+#best_item_heart_09,
+#best_item_heart_10,
+#best_item_heart_11,
+#best_item_heart_12,
+#best_item_heart_13,
+#best_item_heart_14,
+#best_item_heart_15,
+#best_item_heart_16,
+#best_item_heart_17,
+#best_item_heart_18,
+#best_item_heart_19,
+#best_item_heart_20,
+#best_item_heart_21 {display: none;}
+
+.item_list ul li .text .xi-heart {
+    color: red;
+    display: none;
+}
+
+.item_list ul li .text .xi-heart-o {
+    color: #c0c0c0;
+    display: none;
+}
+
+.item_list ul li .text label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 25px;
+    display: inline-block;
+}
+
+#best_item_heart_01:checked ~ label .xi-heart {display: block;}
+#best_item_heart_01:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_01 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_02:checked ~ label .xi-heart {display: block;}
+#best_item_heart_02:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_02 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_03:checked ~ label .xi-heart {display: block;}
+#best_item_heart_03:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_03 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_04:checked ~ label .xi-heart {display: block;}
+#best_item_heart_04:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_04 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_05:checked ~ label .xi-heart {display: block;}
+#best_item_heart_05:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_05 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_06:checked ~ label .xi-heart {display: block;}
+#best_item_heart_06:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_06 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_07:checked ~ label .xi-heart {display: block;}
+#best_item_heart_07:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_07 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_08:checked ~ label .xi-heart {display: block;}
+#best_item_heart_08:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_08 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_09:checked ~ label .xi-heart {display: block;}
+#best_item_heart_09:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_09 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_10:checked ~ label .xi-heart {display: block;}
+#best_item_heart_10:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_10 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_11:checked ~ label .xi-heart {display: block;}
+#best_item_heart_11:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_11 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_12:checked ~ label .xi-heart {display: block;}
+#best_item_heart_12:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_12 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_13:checked ~ label .xi-heart {display: block;}
+#best_item_heart_13:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_13 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_14:checked ~ label .xi-heart {display: block;}
+#best_item_heart_14:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_14 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_15:checked ~ label .xi-heart {display: block;}
+#best_item_heart_15:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_15 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_16:checked ~ label .xi-heart {display: block;}
+#best_item_heart_16:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_16 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_17:checked ~ label .xi-heart {display: block;}
+#best_item_heart_17:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_17 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_18:checked ~ label .xi-heart {display: block;}
+#best_item_heart_18:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_18 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_19:checked ~ label .xi-heart {display: block;}
+#best_item_heart_19:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_19 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_20:checked ~ label .xi-heart {display: block;}
+#best_item_heart_20:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_20 ~ label .xi-heart-o {display: block;}
+
+#best_item_heart_21:checked ~ label .xi-heart {display: block;}
+#best_item_heart_21:checked ~ label .xi-heart-o {display: none;}
+#best_item_heart_21 ~ label .xi-heart-o {display: block;}
+
+
+
+/* ----------------best_item------------------ */
+
+

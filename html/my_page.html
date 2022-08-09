@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMETER_Mobile_main</title>
+    <link rel="stylesheet" href="../css/my_page.css">
+    <link rel="stylesheet" href="../css/template.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="inner_header">
+            <section class="header_bar">
+                <div class="logo_img"><a href="../html/main.html"><img src="../img/DEMETER_logo.jpg" alt=""></a></div>
+    
+                <input type="checkbox" id="ham_btn">
+                <label for="ham_btn" class="lnb_btn"><i class="xi-bars"></i></label>
+    
+    
+                <div class="back_display"></div>
+                
+                <section class="menu_page">
+                    <label for="ham_btn" class="lnb_close_btn"><i class="xi-hamburger-back xi-rotate-180"></i></label>
+    
+                    <div class="Profile">
+                        <div class="profile_img">
+                            <a href="./my_page.html"><img src="../img/Profile.png" alt=""></a>
+                        </div>
+                        <div class="profile_text">
+                            <div class="name"><strong>홍길동</strong>님</div>
+                            <div class="hello">오늘도 즐거운 쇼핑 되세요:)</div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <div class="search_page">
+                            <input type="search" id="search" class="search_box">
+                            <a href="#!"><i class="xi-search"></i></a>
+                        </div>
+                    </div>
+                    <div class="categories_box">
+                        <div class="categories">
+                            <div class="categories_name ABOUT">   
+                                <input type="checkbox" id="ABOUT_check" class="ABOUT_btn">
+                                <label for="ABOUT_check"><div class="dox"></div>ABOUT</label>
+    
+                                <ul class="ABOUT_list">
+                                    <li><a href="#!">ABOUT</a></li>
+                                </ul>
+                            </div>
+                            <div class="categories_name EDITION">   
+                                <input type="checkbox" id="EDITION_check" class="EDITION_btn">
+                                <label for="EDITION_check"><div class="dox"></div>EDITION</label>
+    
+                                <ul class="EDITION_list">
+                                    <li><a href="./sub-EDITION.html">ALL</a></li>
+                                    <li><a href="./sub-EDITION_Signature.html">시그니처 에디션 라인</a></li>
+                                    <li><a href="./sub-EDITION_flower.html">탄생화 선물 에디션</a></li>
+                                </ul>
+                            </div>
+                            <div class="categories_name PERFUME">
+                                <input type="checkbox" id="PERFUME_check" class="PERFUME_btn">
+                                <label for="PERFUME_check"><div class="dox"></div>PERFUME</label>
+    
+                                <ul class="PERFUME_list">
+                                    <li><a href="#!">ALL</a></li>
+                                    <li><a href="#!">드레스퍼퓸</a></li>
+                                    <li><a href="#!">코튼퍼퓸</a></li>
+                                    <li><a href="#!">디퓨져</a></li>
+                                    <li><a href="#!">그 외</a></li>
+                                </ul>
+                            </div>
+                            <div class="categories_name BATH&BODY">
+                                <input type="checkbox" id="BATHBODY_check" class="BATH_BODY_btn">
+                                <label for="BATHBODY_check"><div class="dox"></div>BATH & BODY</label>
+    
+                                <ul class="BATH&BODY_list">
+                                    <li><a href="#!">ALL</a></li>
+                                    <li><a href="#!">바디로션</a></li>
+                                    <li><a href="#!">바디클렌저</a></li>
+                                    <li><a href="#!">바디퍼퓸</a></li>
+                                    <li><a href="#!">핸드</a></li>
+                                    <li><a href="#!">립</a></li>
+                                    <li><a href="#!">바디세트</a></li>
+                                </ul>
+                            </div>
+                            <div class="categories_name EVENT">   
+                                <input type="checkbox" id="EVENT_check" class="EVENT_btn">
+                                <label for="EVENT_check"><div class="dox"></div>EVENT</label>
+    
+                                <ul class="EVENT_list">
+                                    <li><a href="#!">EVENT</a></li>
+                                </ul>
+                            </div>
+                            <div class="categories_name Community">
+                                <input type="checkbox" id="community_check" class="community_btn">
+                                <label for="community_check"><div class="dox"></div>커뮤니티</label>
+    
+                                <ul class="community_list">
+                                    <li><a href="#!">게시판</a></li>
+                                    <li><a href="#!">이용안내</a></li>
+                                    <li><a href="#!">상품Q&A</a></li>
+                                    <li><a href="#!">리뷰</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="btn">
+                        <div class="box01"><a href="#!">
+                            <div class="icon"><i class="xi-call"></i>고객센터</div>
+                            <p>02-323-0356</p>
+                        </a></div>
+                        <div class="box02"><a href="#!">
+                            <div class="icon"><i class="xi-forum"></i>1:1문의하기</div>
+                            <p>Q&A</p>
+                        </a></div>
+                    </div>
+    
+                </section>
+    
+            </section>
+        </div>
+        
+    </header>
+
+
+    <section class="nav_bar">
+        <ul class="nav">
+            <li><a href="./my_page.html"><i class="xi-user"></i>마이페이지</a></li>
+            <li><a href="#!"><i class="xi-truck xi-flip-horizontal"><br></i>주문/배송</a></li>
+            <li><a href="./main.html"><i class="xi-home"></i>홈</a></li>
+            <li><a href="#!"><i class="xi-heart"></i>관심상품</a></li>
+            <li><a href="#!"><i class="xi-basket"></i>장바구니</a></li>
+        </ul>
+    </section>
+
+    <div class="main_title">
+        <a href="./main.html"><i class="xi-angle-left-thin"></i></a>
+        <div class="text">마이페이지</div>
+    </div>
+
+
+    <section class="warp">
+
+        <section class="my_name">
+            <div class="my_name_left">
+                <div class="name"><strong>홍길동</strong>님</div>
+                <div class="rating">[일반회원]</div>
+            </div>
+            <div class="my_name_right">
+                <a href=""><div class="name_modify">회원정보수정</div></a>
+            </div>
+        </section>
+
+        <section class="my_order">
+            <h4>내 주문</h4>
+            <div class="state_box">
+                <div class="state_01 state">
+                    <div class="state_01_count count">0</div>
+                    <div class="state_01_text text">입금전</div>
+                </div>
+                <div class="state_02 state">
+                    <div class="state_02_count count">0</div>
+                    <div class="state_02_text text">배송준비중</div>
+                </div>
+                <div class="state_03 state">
+                    <div class="state_03_count count">0</div>
+                    <div class="state_03_text text">배송중</div>
+                </div>
+                <div class="state_04 state">
+                    <div class="state_04_count count">0</div>
+                    <div class="state_04_text text">배송완료</div>
+                </div>
+            </div>
+            <div class="state_side_box">
+                <a href=""><div>취소 (0)</div></a>
+                <a href=""><div>교환 (0)</div></a>
+                <a href=""><div>반품 (0)</div></a>
+            </div>
+        </section>
+    
+        <section class="product_list_box">
+            <div class="cart_list product_list">
+                <div class="item_list">
+                    <h4>장바구니에 담긴 상품</h4>
+                    <ul class="product_list">
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[카카오x톡별기획]데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                                    <div class="cost">61,000원</div>
+                                    <div class="price">26,900원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/EDITION/flower_03_daffodil_30ml_set.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[탄생화선물]3월 수선화(daffodil) 플라워 30ml 향수 + 키링 세트</div>
+                                    <div class="cost">29,000원</div>
+                                    <div class="price">20,000원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/PERFUME/LIFE STYLE/life_01.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] NEW 메모리 퍼퓸 디퓨저100ml _코튼블루(Cotton Blue) </div>
+                                    <div class="cost">19,000원</div>
+                                    <div class="price">13,300원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                    </ul>
+                    <div class="page_like"><a href="#!"><i class="xi-ellipsis-h"></i></a></div>
+                </div>
+            </div>
+            <div class="heart_list product_list">
+                <div class="item_list">
+                    <h4>관심 상품</h4>
+                    <ul class="product_list">
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/PERFUME/LIFE STYLE/life_11.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] 차량용 디퓨저+실내용 디퓨저 30ml 
+                                    </div>
+                                    <div class="cost">30,000원</div>
+                                    <div class="price">16,900원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/EVENT/event_03.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] NEW 바디미스트 80ml 택1 
+                                    </div>
+                                    <div class="cost">12,000원</div>
+                                    <div class="price">10,900원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/EVENT/event_05.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르] 릴리프 바디로션 480ml</div>
+                                    <div class="cost">16,000원</div>
+                                    <div class="price">12,000원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                    </ul>
+                    <div class="page_like"><a href="#!"><i class="xi-ellipsis-h"></i></a></div>
+                </div>
+            </div>
+            <div class="recently_list product_list">
+                <div class="item_list">
+                    <h4>최근 본 상품</h4>
+                    <ul class="product_list">
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/PERFUME/Sunshine&Moonbeam_EDC_30ml.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">선샤인(Sunshine_햇빛) & 문빔(Moonbeam_달빛) EDC 30ml </div>
+                                    <div class="cost">29,000원</div>
+                                    <div class="price">19,800원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_14.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[카카오x톡별기획]데메테르 파우더리머스크 (Powdery Musk) 3종 홀로그램 세트박스</div>
+                                    <div class="cost">61,000원</div>
+                                    <div class="price">26,900원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                        <li>
+                            <div><a href="#!">
+                                <div class="best_img product_img"><img src="../img/BATH & BODY/Bath&Body_12.jpg" alt=""></div>
+                                <div class="text">
+                                    <div class="title">[데메테르]NEW 프레그런스 핸드크림 택1 </div>
+                                    <div class="cost">10,000원</div>
+                                    <div class="price">4,900원</div>
+                                </div>
+                            </a></div>
+                        </li>
+                    </ul>
+                    <div class="page_like"><a href="#!"><i class="xi-ellipsis-h"></i></a></div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="Information_like">
+            <a href="#!"><div class="box box01">
+                <div class="title">적립금</div>
+                <div class="State">2,000 포인트</div>
+            </a></div>
+            <a href="#!"><div class="box box02">
+                <div class="title">예치금</div>
+                <div class="State">0 원</div>
+            </a></div>
+            <a href="#!"><div class="box box03">
+                <div class="title">쿠폰</div>
+                <div class="State">0 장</div>
+            </a></div>
+            <a href="#!"><div class="box box04">
+                <div class="title">문의내역</div>
+                <div class="State">(0)</div>
+            </a></div>
+            <a href="#!"><div class="box box05">
+                <div class="title">리뷰</div>
+                <div class="State">(0)</div>
+            </a></div>
+            <a href="#!"><div class="box box06">
+                <div class="title">주문조회</div>
+                <div class="State">(0)</div>
+            </a></div>
+        </section>
+
+    </section>
+    
+
+    <div class="page_btn">
+        <div><a href="#!">
+            <div class="icon">1 : 1 문의하기<i class="xi-forum"></i></div>
+        </a></div>
+        <div><a href="#!">
+            <div class="icon">고객센터<i class="xi-call"></i>02-323-0356</div>
+        </a></div>
+    </div>
+
+
+
+
+
+    <footer class="footer">
+        
+        <!-- <div class="sns">
+            <div><a href="https://www.youtube.com/channel/UC68OK1FqRX-DlSFHswCqmcg"><i class="xi-youtube"></i></a></div>
+            <div><a href="https://www.instagram.com/demeter_kr/"><i class="xi-instagram"></i></a></div>
+            <div><a href="https://www.facebook.com/Dazzling.M.21/"><i class="xi-facebook"></i></a></div>
+        </div> -->
+
+
+        <ul>
+            <li><a href="#!">이용안내</a></li>
+            <li><a href="#!">회사소개</a></li>
+            <li><a href="#!"><strong>개인정보처리방침</strong></a></li>
+            <li><a href="#!">이용약관</a></li>
+        </ul>
+
+        <div class="footer_text">
+            주식회사포시즌라보라토리<br>
+            서울특별시 종로구 팔판길 38 (팔판동) 2층<br>
+            대표이사: 김태희 사업자등록번호: 137-86-46113<br>
+            통신판매업신고: 제2020-서울종로-0232호 [사업자정보확인]<br>
+            개인정보관리책임: 김태희(joan_kim@prestizine.com)<br>
+            호스팅제공: 카페24(주)<br>
+            E-mail: parfums1997@gmail.com<br><br>
+            Copyright© 데메테르. All Rights Reserved.
+        </div>
+
+
+
+    </footer>
+
+    
+    
+   
+
+
+
+
+
+
+
+
+   
+        
+  
+
+   
+
+    
+    
+</body>
+</html>

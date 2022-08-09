@@ -1,0 +1,30 @@
+
+
+
+
+
+/* ----------------choice------------------ */
+
+.cheice_box {
+    margin-top: 47px;
+}
+
+
+#category {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    border: 1px solid #333;
+    background: url(../img/baseline_expand_more_black_24dp.png) no-repeat right 50%; /* 화살표 위치 */
+    background-size: 30px; /* 화살표 크기 */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline:none;
+}
+
+
+
+/* ----------------choice------------------ */
+
+
